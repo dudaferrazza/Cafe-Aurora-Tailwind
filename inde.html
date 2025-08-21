@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Aurora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .logo {
+        font-family: 'Pacifico', cursive;
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#fffaf5] text-[#222]">
+
+    <!-- Header -->
+    <header class="bg-[#fffaf5] py-4 shadow w-full">
+      <div class="max-w-[1200px] w-[90%] mx-auto flex justify-between items-center">
+        <h1 class="logo text-2xl font-medium text-[#8b4513]">Café Aurora</h1>
+        <nav class="flex items-center" aria-label="Menu Principal">
+          <div class="lg:hidden">
+            <button id="menu-toggle" aria-label="abrir o menu mobile" class="text-2xl font-bold bg-transparent border-none">☰</button>
+          </div>
+          <div class="hidden lg:block">
+            <ul class="flex gap-6 items-center font-medium">
+              <li><a href="#">Início</a></li>
+              <li><a href="#">Cárdapio</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('images/aurora-capa.jpg');">
+      <div class="text-center text-[#fffaf5] py-32 px-4">
+        <h2 class="text-4xl font-black mb-4 leading-tight">Sinta o sabor do verdadeiro café</h2>
+        <p class="text-lg mb-8">Uma experiência úncia de sabores intensos e aromas involventes, preparados com grãos selecionados e muito carinho</p>
+        <a href="#cardapio" class="bg-[#8b4513] text-[#f9e8d6] py-3 px-6 rounded-lg font-semibold hover:bg-[#5c2e0f] transition">Conheça nosso cardápio</a>
+      </div>
+    </section>
+
+    <!-- Cardápio -->
+    <section id="cardapio" class="bg-white py-20">
+      <div class="max-w-[1200px] w-[90%] mx-auto">
+        <h2 class="text-2xl text-center font-bold mb-2">Nossos Cafés Especiais</h2>
+        <p class="text-center text-[#555] max-w-xl mx-auto mb-12">Descubra nossa seleção de cafés premium, cuidadosamente preparados para oferecer uma exeperiência sensorial inesquecivel</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Card 1 -->
+          <div class="bg-[#f9e8d6] rounded-xl shadow overflow-hidden">
+            <img src="images/espresso.jpg" alt="Espresso Clássico" class="w-full">
+            <div class="p-6">
+              <h3 class="text-lg font-semibold mb-2">Espresso Clássico</h3>
+              <p class="text-[#555] mb-4">Intenso e Encorpado, com crema perfeito e notas de chocolate amargo</p>
+              <span class="text-[#8b4513] font-bold">R$ 8,90</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-[#f9e8d6] rounded-xl shadow overflow-hidden">
+            <img src="images/capuccino.jpg" alt="Capuccino Cremoso" class="w-full">
+            <div class="p-6">
+              <h3 class="text-lg font-semibold mb-2">Capuccino Cremoso</h3>
+              <p class="text-[#555] mb-4">Equilibrado e suave, com espuma aveludada e canela polvilhada</p>
+              <span class="text-[#8b4513] font-bold">R$ 12,50</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-[#f9e8d6] rounded-xl shadow overflow-hidden">
+            <img src="images/cafe-gelado.jpg" alt="Café Gelado" class="w-full">
+            <div class="p-6">
+              <h3 class="text-lg font-semibold mb-2">Café Gelado</h3>
+              <p class="text-[#555] mb-4">Refrescante e aromático, com toques de baunilha e calda de caramelo</p>
+              <span class="text-[#8b4513] font-bold">R$ 14,90</span>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-[#f9e8d6] rounded-xl shadow overflow-hidden">
+            <img src="images/cafe-coado-especial.jpg" alt="Café Coado" class="w-full">
+            <div class="p-6">
+              <h3 class="text-lg font-semibold mb-2">Café Coado Especial</h3>
+              <p class="text-[#555] mb-4">Método tradicional, que realça notas frutadas e acidez equilibrada</p>
+              <span class="text-[#8b4513] font-bold">R$ 10,50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="bg-[#f9e8d6] py-16">
+      <div class="bg-white rounded-2xl overflow-hidden max-w-[900px] w-[90%] mx-auto flex flex-col lg:flex-row">
+        <div class="p-4 lg:p-12 flex-1 mb-6 lg:mb-0">
+          <h2 class="text-2xl lg:text-3xl font-bold mb-6">Horário de Funcionamento</h2>
+          <div class="space-y-3 mb-6">
+            <p class="flex justify-between"><span>Segunda a Sexta</span><span>07:00 - 20:00</span></p>
+            <p class="flex justify-between"><span>Sábado</span><span>08:00 - 22:00</span></p>
+            <p class="flex justify-between"><span>Domingo</span><span>09:00 - 18:00</span></p>
+          </div>
+          <div class="mb-6">
+            <p class="font-bold">Endereço</p>
+            <p>Rua das Flores, 123 - Centro</p>
+            <p>São Paulo, SP</p>
+          </div>
+          <a href="#" class="bg-[#8b4513] text-[#f9e8d6] py-3 px-6 rounded-lg font-semibold hover:bg-[#5c2e0f] transition">Ver no Mapa</a>
+        </div>
+        <div class="flex-1 h-[300px] lg:h-[550px] overflow-hidden">
+          <img src="images/aurora-horario.jpg" alt="Café sendo servido" class="object-cover w-full h-full">
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0a0a1a] text-[#fffaf5] py-10">
+      <div class="max-w-[1200px] w-[90%] mx-auto flex flex-col lg:flex-row justify-between gap-8 items-center">
+        <div class="text-center lg:text-left">
+          <h3 class="logo text-2xl mb-2">Café Aurora</h3>
+          <p>O melhor café da Cidade desde 2015</p>
+        </div>
+        <div class="text-center lg:text-right">
+          <div class="flex justify-center lg:justify-end gap-4 mb-4">
+            <a href="#" class="bg-[#555] p-2 rounded-full hover:bg-[#333] transform hover:scale-125 transition">
+              <img src="images/instagram.png" alt="Instagram" class="w-6 h-auto">
+            </a>
+            <a href="#" class="bg-[#555] p-2 rounded-full hover:bg-[#333] transform hover:scale-125 transition">
+              <img src="images/facebook.png" alt="Facebook" class="w-6 h-auto">
+            </a>
+            <a href="#" class="bg-[#555] p-2 rounded-full hover:bg-[#333] transform hover:scale-125 transition">
+              <img src="images/whatsapp.png" alt="Whatsapp" class="w-6 h-auto">
+            </a>
+          </div>
+          <p class="text-sm">&copy; 2025 Café Aurora. Todos os Direitos Reservados</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
